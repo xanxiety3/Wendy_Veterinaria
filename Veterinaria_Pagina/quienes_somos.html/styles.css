@@ -1,0 +1,291 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {          
+    background-color: #009FC6;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+#logosRedessociales {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-right: 50px;
+}
+
+.logo {
+    margin-left: 20px; 
+    /* height: 60px;  */
+}
+
+.emergency-icon {
+    width: 30px;
+    height: 30px;
+    margin-top: 20px;
+}
+
+.social-icon {
+     /* width: 32px;
+    height: 32px;  */
+    margin-top: 5px;
+}
+
+
+.qsomos{
+    text-align: center;
+    margin: 0;
+    color: white;
+    background-color: #2F3446;
+    padding: 10px;
+}
+.mision_vision{
+    width: 100%;
+    margin: 0 0;
+    padding: 0;
+    /* border: 2px solid salmon; */
+    /* margin-top: -4px; */
+}
+.equipo{
+    width: 100%;
+
+    margin-top: -6px;
+}
+
+nav {
+    background-color: #2F3446;
+    padding: 1em 2em;
+    position: relative;
+}
+
+.nav-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-list li {
+    margin: 0;
+}
+
+.nav-list a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-list a:hover {
+    color: #009FC6;
+}
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    height: 24px;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.menu-toggle .bar {
+    height: 3px;
+    width: 25px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+
+
+
+
+footer {
+    background-color: #2F3446;
+    color: white;
+    padding: 20px;
+    position: relative;
+    top: -6px;
+}
+
+.contenido_footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.section1, .section2, .section3 {
+    flex: 1;
+    margin: 10px;
+    position: relative;
+}
+
+.section2 {
+    left: 115px;
+}
+
+.section1 {
+    left: 50px;
+}
+
+.section3 {
+    right: 20px;
+}
+
+.sedes {
+    position: relative;
+    left: 100px;
+}
+
+.footer-image {
+    position: absolute;
+    top: 20px;
+    right: 0;
+    height: 75%;
+}
+
+.footer-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.blanco-texto {
+    color: white;
+}
+
+.azul-texto {
+    color: #1CDDE9;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+    .logo {
+        height: 50px; 
+    }
+
+    .emergency-icon {
+        width: 70px;
+        height: 70px; 
+        width: 28px;
+        height: 28px;
+        margin-top: 10px;
+    }
+
+    .social-icon {
+        width: 28px;
+        height: 28px;
+        margin-top: 3px;
+    }
+    nav {
+        background-color: #2F3446;
+        padding: 1em 2em;
+        position: relative;
+    }
+    
+    .nav-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .nav-list li {
+        margin: 0;
+    }
+    
+    .nav-list a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+    }
+    
+    .nav-list a:hover {
+        color: #009FC6;
+    }
+    .menu-toggle {
+        display: none;
+        flex-direction: column;
+        height: 24px;
+        justify-content: space-between;
+        cursor: pointer;
+    }
+    
+    .menu-toggle .bar {
+        height: 3px;
+        width: 25px;
+        background-color: white;
+        border-radius: 10px;
+    }
+
+
+    .contenido_footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .section1, .section2, .section3 {
+        margin: 10px 0;
+        width: 100%;
+        text-align: center;
+        left: 0; 
+        right: 0;
+    }
+    .sedes{
+        left: 5px;
+    }
+
+    .footer-image {
+        position: relative;
+        top: auto;
+        right: auto;
+        margin-left: auto;
+        margin-right: 0;
+        align-self: flex-end;
+        left: 100px;
+
+    }
+
+    .footer-image img {
+        max-width: 100%;
+        height: auto;
+    }
+    
+
+}
+
+@media (max-width: 480px) {
+    .logo {
+        height: 40px;  
+    }
+
+    .emergency-icon {
+         width: 60px;
+        height: 60px; 
+        margin-top: 5px;
+        width: 24px;
+        height: 24px;
+    }
+
+    .social-icon {
+        width: 24px;
+        height: 24px;
+        margin-top: 1px;
+    }
+    
+}
+    

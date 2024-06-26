@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendario de Citas</title>
+    <link rel="stylesheet" href="calendario.css">
+</head>
+<body>
+    <div class="calendar-container">
+        <div class="calendar-header">
+            <button class="nav-button" id="prev-month">&lt;</button>
+            <span class="month-year" id="month-year">ABRIL 2024</span>
+            <button class="nav-button" id="next-month">&gt;</button>
+        </div>
+        <div class="calendar-main">
+            <div class="calendar-grid" id="calendar-grid">
+                <div class="day">LUNES</div>
+                <div class="day">MARTES</div>
+                <div class="day">MIÉRCOLES</div>
+                <div class="day">JUEVES</div>
+                <div class="day">VIERNES</div>
+                <div class="day">SÁBADO</div>
+                <div class="day">DOMINGO</div>
+            </div>
+            <div class="available-times">
+                <div class="times-header">HORAS DISPONIBLES</div>
+                <div class="time"><input type="radio" name="time" id="time-9am"><label for="time-9am">09:00 AM</label></div>
+                <div class="time"><input type="radio" name="time" id="time-10am"><label for="time-10am">10:00 AM</label></div>
+                <div class="time"><input type="radio" name="time" id="time-11am"><label for="time-11am">11:00 AM</label></div>
+                <div class="time"><input type="radio" name="time" id="time-12pm"><label for="time-12pm">12:00 PM</label></div>
+                <div class="time"><input type="radio" name="time" id="time-3pm"><label for="time-3pm">03:00 PM</label></div>
+                <div class="time"><input type="radio" name="time" id="time-4pm"><label for="time-4pm">04:00 PM</label></div>
+                <div class="time"><input type="radio" name="time" id="time-5pm"><label for="time-5pm">05:00 PM</label></div>
+                <div class="time"><input type="radio" name="time" id="time-6pm"><label for="time-6pm">06:00 PM</label></div>
+                
+                <button class="accept-button" id="accept-button"  >ACEPTAR</button>
+            </div>
+        </div>
+
+    </div>
+    <input type="text" id="selected-date" readonly>
+    <input type="text" id="selected-time" readonly>
+    <a href="/servicios/servicios.html" id="cerrarLink" target="_parent">Cerrar</a>
+
+    <script src="calendario.js"></script>
+    
+</body>
+</html>

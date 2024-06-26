@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="registro.css">
+</head>
+<body>
+    <div class="container">
+        <fieldset class="solicitarcita">
+            <legend class="cita">REGISTRO</legend>
+        
+        <!-- <h1>SOLICITAR CITA</h1> -->
+            <form class="appointment-form">
+                <fieldset>
+                    <!-- <legend>ACERCA DEL DUEÑO</legend> -->
+                    <h4 class="dueño">USUARIO</h4>
+                    <div class="form-columns">
+                        <div class="form-group radio-group">
+                            <input type="radio" id="hombre" name="gender" value="hombre">
+                            <label for="hombre">Hombre</label>
+                            <input type="radio" id="mujer" name="gender" value="mujer">
+                            <label for="mujer">Mujer</label>
+                            <input type="radio" id="otro" name="gender" value="otro">
+                            <label for="otro">Otro</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="document" name="document" placeholder="Número de documento:">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Nombre:">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="surname" name="surname" placeholder="Apellidos:">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Email:">
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="phone" name="phone" placeholder="Teléfono:">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" id="contrasenia" name="contrasenia" placeholder="Contraseña:">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" id="confiurmarcontrasenia" name="contrasenia-confirm" placeholder="Repita la contraseña:">
+                        </div>
+                    </div>
+                </fieldset>
+
+                
+                   
+                
+                    <!-- <fieldset>
+                        <h4 class="dueño">ACERCA DE LA MASCOTA</h4>
+                        <div class="form-columns">
+                            <div class="form-column">
+                                <div class="form-group">
+                                    <select id="tipoMascota" name="tipoMascota">
+                                        <option value="" disabled selected>Tipo de Mascota</option>
+                                        <option value="perro">Perro</option>
+                                        <option value="gato">Gato</option>
+                                        <option value="otro">Otro</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" id="nombreMascota" name="nombreMascota" placeholder="Nombre de la Mascota:">
+                                </div>
+                                <div class="form-group">
+                                    <select id="servicios" name="servicios">
+                                        <option value="" disabled selected>Servicios</option>
+                                        <option value="consulta">Consulta</option>
+                                        <option value="vacunacion">Vacunación</option>
+                                        <option value="peluqueria">Peluquería</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <select id="sedes" name="sedes">
+                                        <option value="" disabled selected>Sedes</option>
+                                        <option value="bogota">Bogotá</option>
+                                        <option value="bucaramanga">Bucaramanga</option>
+                                        <option value="medellin">Medellín</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <select id="citasDisponibles" name="citasDisponibles">
+                                        <input type="date" id="edad" name="edad" placeholder="Edad">
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-column">
+                                <div class="form-group-inline">
+                                    <div class="form-group">
+                                        <select id="raza" name="raza">
+                                            <option value="" disabled selected>Raza</option>
+                                            <option value="labrador">Labrador</option>
+                                            <option value="persa">Persa</option>
+                                            <option value="otro">Otro</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="number" id="edad" name="edad" placeholder="Edad">
+                                    </div>
+                                </div>
+                                <div class="form-group radio-group">
+                                    <label for="hombre">Genero:</label>
+                                    <input type="radio" id="mujer" name="gender" value="mujer">
+                                    <label for="mujer">Macho</label>
+                                    <input type="radio" id="otro" name="gender" value="otro">
+                                    <label for="otro">Hembra</label>
+                                </div>
+                                <div class="form-group">
+                                    <textarea id="recomendaciones" name="recomendaciones" rows="4" placeholder="Recomendaciones"></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <button onclick="window.location.href='#ventanaEmergente';" type="submit">Enviar</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="ventanaEmergente">
+                             iframe que carga el calendario para escoger la cita 
+                            <iframe src="calendario.html"></iframe>
+                        </div>
+                    </fieldset> -->
+                    
+                    <fieldset>
+                        <h4 class="dueño">MASCOTA</h4>
+                        <div class="form-columns">
+                            <div class="form-column">
+                                <div class="form-group">
+                                    <select id="tipoMascota" name="tipoMascota">
+                                        <option value="" disabled selected>Tipo de Mascota</option>
+                                        <option value="perro">Perro</option>
+                                        <option value="gato">Gato</option>
+                                        <option value="otro">Otro</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" id="nombreMascota" name="nombreMascota" placeholder="Nombre de la Mascota:">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" id="cumpleMascota" name="cumpleMascota" placeholder="Cumpleaños de la Mascota:">
+                                </div>
+                                     
+                                <div class="form-group">
+                                    <button type="submit">Añadir otra Mascota</button>
+                                </div>
+                                <div class="form-group">
+                                    <button onclick="window.location.href='/index/index.html';" type="submit">Enviar</button>
+                                </div>
+                            </div>
+                            <div class="form-column">
+                                <div class="form-group-inline">
+                                    <div class="form-group">
+                                        <select id="raza" name="raza">
+                                            <option value="" disabled selected>Raza</option>
+                                            <option value="labrador">Labrador</option>
+                                            <option value="persa">Persa</option>
+                                            <option value="otro">Otro</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="number" id="edad" name="edad" placeholder="Edad">
+                                    </div>
+                                </div>
+                                <div class="form-group radio-group">
+                                    <label for="hombre">Genero:</label>
+                                    <input type="radio" id="mujer" name="gender" value="mujer">
+                                    <label for="mujer">Macho</label>
+                                    <input type="radio" id="otro" name="gender" value="otro">
+                                    <label for="otro">Hembra</label>
+                                </div>
+                                <div class="form-group">
+                                    <textarea id="recomendaciones" name="recomendaciones" rows="4" placeholder="Otras caracteristicas"></textarea>
+                                </div>
+                               
+                            </div>
+                        </div>
+                        
+                    </fieldset>
+                
+                
+                
+    </div>
+    
+</body>
+</html>

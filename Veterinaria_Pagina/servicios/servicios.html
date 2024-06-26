@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <header>
+        <a href="#"><img src="imge/logofin.png" alt="Logo de la pagina" class="logo"></a>
+        <a href="#"><img src="imge/telefono.png" width="86" height="86" alt="icono de llamada de emergencia" class="emergency-icon"></a>
+        <section id="logosRedessociales">
+            <img src="imge/instagram.png" alt="icono de instagram" 
+                class="social-icon" >
+            <img src="imge/whatsapp.png" alt="icono de whatsapp" 
+                class="social-icon">
+            <img src="imge/gorjeo.png" alt="icono de x" 
+                class="social-icon">
+            <img src="imge/facebook.png" alt="icono de facebook"
+                class="social-icon"  >
+        </section>
+    </header>
+    <nav>
+        <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <ul class="nav-list">
+            <li><a href="/index/index.html">NUESTRA TIENDA</a></li>
+            <li><a href="/promociones/promociones.html">PROMOCIONES</a></li>
+            <li><a href="/quienes_somos.html/quienes_somos.html">QUIÉNES SOMOS</a></li>
+            <li><a href="/servicios/servicios.html">SERVICIOS</a></li>
+            <li><a href="/index/login.html">MI CUENTA</a></li>
+        </ul>
+    </nav>
+    <script src="scripts.js"></script>
+    </nav>
+    <section class="promos">
+       <a href="/promociones/promociones.html"> <img class="verpromo" src="imge/verpromos.png" > </a> 
+        <button class="solicitar" onclick="window.location.href='/promociones/promociones.html';"></button>
+    </section>
+    <div class="container">
+        <fieldset class="solicitarcita">
+            <legend class="cita">SOLICITAR CITA</legend>
+        
+        <!-- <h1>SOLICITAR CITA</h1> -->
+            <form class="appointment-form">
+                <fieldset>
+                    <!-- <legend>ACERCA DEL DUEÑO</legend> -->
+                    <h4 class="dueño">ACERCA DEL DUEÑO</h4>
+                    <div class="form-columns">
+                        <div class="form-group radio-group">
+                            <input type="radio" id="hombre" name="gender" value="hombre">
+                            <label for="hombre">Hombre</label>
+                            <input type="radio" id="mujer" name="gender" value="mujer">
+                            <label for="mujer">Mujer</label>
+                            <input type="radio" id="otro" name="gender" value="otro">
+                            <label for="otro">Otro</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="document" name="document" placeholder="Número de documento:">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Nombre:">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="surname" name="surname" placeholder="Apellidos:">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Email:">
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="phone" name="phone" placeholder="Teléfono:">
+                        </div>
+                    </div>
+                </fieldset>
+
+                
+                   
+                
+                    <!-- <fieldset>
+                        <h4 class="dueño">ACERCA DE LA MASCOTA</h4>
+                        <div class="form-columns">
+                            <div class="form-column">
+                                <div class="form-group">
+                                    <select id="tipoMascota" name="tipoMascota">
+                                        <option value="" disabled selected>Tipo de Mascota</option>
+                                        <option value="perro">Perro</option>
+                                        <option value="gato">Gato</option>
+                                        <option value="otro">Otro</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" id="nombreMascota" name="nombreMascota" placeholder="Nombre de la Mascota:">
+                                </div>
+                                <div class="form-group">
+                                    <select id="servicios" name="servicios">
+                                        <option value="" disabled selected>Servicios</option>
+                                        <option value="consulta">Consulta</option>
+                                        <option value="vacunacion">Vacunación</option>
+                                        <option value="peluqueria">Peluquería</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <select id="sedes" name="sedes">
+                                        <option value="" disabled selected>Sedes</option>
+                                        <option value="bogota">Bogotá</option>
+                                        <option value="bucaramanga">Bucaramanga</option>
+                                        <option value="medellin">Medellín</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <select id="citasDisponibles" name="citasDisponibles">
+                                        <input type="date" id="edad" name="edad" placeholder="Edad">
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-column">
+                                <div class="form-group-inline">
+                                    <div class="form-group">
+                                        <select id="raza" name="raza">
+                                            <option value="" disabled selected>Raza</option>
+                                            <option value="labrador">Labrador</option>
+                                            <option value="persa">Persa</option>
+                                            <option value="otro">Otro</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="number" id="edad" name="edad" placeholder="Edad">
+                                    </div>
+                                </div>
+                                <div class="form-group radio-group">
+                                    <label for="hombre">Genero:</label>
+                                    <input type="radio" id="mujer" name="gender" value="mujer">
+                                    <label for="mujer">Macho</label>
+                                    <input type="radio" id="otro" name="gender" value="otro">
+                                    <label for="otro">Hembra</label>
+                                </div>
+                                <div class="form-group">
+                                    <textarea id="recomendaciones" name="recomendaciones" rows="4" placeholder="Recomendaciones"></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <button onclick="window.location.href='#ventanaEmergente';" type="submit">Enviar</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="ventanaEmergente">
+                             iframe que carga el calendario para escoger la cita 
+                            <iframe src="calendario.html"></iframe>
+                        </div>
+                    </fieldset> -->
+                    
+                    <fieldset>
+                        <h4 class="dueño">ACERCA DE LA MASCOTA</h4>
+                        <div class="form-columns">
+                            <div class="form-column">
+                                <div class="form-group">
+                                    <select id="tipoMascota" name="tipoMascota">
+                                        <option value="" disabled selected>Tipo de Mascota</option>
+                                        <option value="perro">Perro</option>
+                                        <option value="gato">Gato</option>
+                                        <option value="otro">Otro</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" id="nombreMascota" name="nombreMascota" placeholder="Nombre de la Mascota:">
+                                </div>
+                                <div class="form-group">
+                                    <select id="servicios" name="servicios">
+                                        <option value="" disabled selected>Servicios</option>
+                                        <option value="consulta">Consulta</option>
+                                        <option value="vacunacion">Vacunación</option>
+                                        <option value="peluqueria">Peluquería</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <select id="sedes" name="sedes">
+                                        <option value="" disabled selected>Sedes</option>
+                                        <option value="bogota">Bogotá</option>
+                                        <option value="bucaramanga">Bucaramanga</option>
+                                        <option value="medellin">Medellín</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <input type="date" id="Fecha" name="Fecha y Hora" placeholder="Edad">
+                                </div>
+                            </div>
+                            <div class="form-column">
+                                <div class="form-group-inline">
+                                    <div class="form-group">
+                                        <select id="raza" name="raza">
+                                            <option value="" disabled selected>Raza</option>
+                                            <option value="labrador">Labrador</option>
+                                            <option value="persa">Persa</option>
+                                            <option value="otro">Otro</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="number" id="edad" name="edad" placeholder="Edad">
+                                    </div>
+                                </div>
+                                <div class="form-group radio-group">
+                                    <label for="hombre">Genero:</label>
+                                    <input type="radio" id="mujer" name="gender" value="mujer">
+                                    <label for="mujer">Macho</label>
+                                    <input type="radio" id="otro" name="gender" value="otro">
+                                    <label for="otro">Hembra</label>
+                                </div>
+                                <div class="form-group">
+                                    <textarea id="recomendaciones" name="recomendaciones" rows="4" placeholder="Recomendaciones"></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <button type="submit">Enviar</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="ventanaEmergente">
+                            <div class="calendar-container">
+                                
+                                <iframe src="calendario.html"></iframe>
+                            </div>
+                        </div>
+                    </fieldset>
+                
+                
+                
+    </div>
+
+    <footer>
+        <div class="contenido_footer">
+            <section class="section1">
+                <h2><span class="blanco-texto sedes">SEDES</span></h2>
+                <h4><span class="azul-texto">Bogotá:</span><span class="blanco-texto">Calle 85 # 15-10, Barrio Chicó Norte</span></h4>
+                <h4><span class="azul-texto">Bucaramanga:</span><span class="blanco-texto">Carrera 33 # 48-20, Barrio Cabecera Del Llano</span></h4>
+                <h4><span class="azul-texto">Barranquilla:</span><span class="blanco-texto">Calle 72 # 45-62, Barrio Alto Prado</span></h4>
+                <h4><span class="azul-texto">Tunja:</span><span class="blanco-texto">Calle 19 # 10-45, Barrio Centro</span></h4>
+
+            </section>
+            <section class="section2">
+                <h2><span class="blanco-texto">HORARIOS</span></h2>
+                <h4><span class="azul-texto">LUNES - VIERNES</span></h4>
+                <h4><span class="blanco-texto">09:00 AM - 06:00 PM</span></h4>
+                <h4><span class="azul-texto">SÁBADOS - FESTIVOS</span></h4>
+                <h4><span class="blanco-texto">10:30 AM - 01:30 PM</span></h4>
+            </section>
+            <section class="section3">
+                <h2><span class="blanco-texto">CONTACTOS</span></h2>
+                <h4><span class="azul-texto">Email:</span><span class="blanco-texto">VetNa@gmail.com</span></h4>
+                <h4><span class="azul-texto">Instagram:</span><span class="blanco-texto">@veterinarianavarro</span></h4>
+                <h4><span class="azul-texto">Facebook:</span><span class="blanco-texto">@VetNavarro</span></h4>
+                <h4><span class="azul-texto">WhatsApp:</span><span class="blanco-texto">+57 305 3465 675</span></h4>
+                <h4><span class="azul-texto">Twitter:</span><span class="blanco-texto">@VetNavarro</span></h4>
+            </section>
+        </div>
+        <section class="footer-image">
+            <img src="imge/perro.png" alt="Perro">
+        </section>
+    </footer>
+    <script src="servicios.js"></script>
+</body>
+</html>
